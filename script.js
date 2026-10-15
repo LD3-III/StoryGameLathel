@@ -10,42 +10,42 @@
 // --------------------------------------------------
 
 // First, we create a variable for the current scene being displayed
-let currentScene = "backyard";
+let currentScene = "apartment";
 
 // Then, we create an object that stores the data for each scene,
 const scenes = {
   // See "backyard" for the first example
-  backyard: {
-    title: "Location: Backyard",
-    character: "Interviewee:Grandma",
-    text: "Text: well what I remember happening is that Darcie went inside to play with her pretend kitchen, I heard her neighbor mention he was really hungry, and the dog ran around really quickly",
+  apartment: {
+    title: "Location: apartment",
+    character: "Detective Grey",
+    text: "Day 1:The case starts at home A piercing green light glows under your mother's door. Creev AI is running again, long after midnight. Your phone buzzes with the first case files.",
     // you can choose how many choices to include
     // each choice can have text, an action, and/or nextScene
     choices: [
       {
-        text: "Chase after the dog (-10 HP)",
+        text: "Check on your mother",
         action: function () {
-          updateHealth(-10);
+          updateWill(10);
         },
-        nextScene: "entrance"
+        nextScene: "mothersroom"
       },
       {
-        text: "Ask about the neighbor",
-        nextScene: "hallway"
+        text: "you check in with your mother, and see that she is still using Creev. Her eyes are nearly glazed over as you confort her, before returning to the living room.",
+        nextScene: "apartment"
       },
       {
-          text: "Pick up the brass key",
+          text: "Read the case files. All three victims lived in the same complex and carried an orange keycard",
           action: function () {
-            pickUpItem("brass key");
+            pickUpItem("casefiles");
           },
-          nextScene: "hallway"
+          nextScene: "complexhallways"
       }
     ]
   },
 
-  entrance: {
-    title: "Location: Entrance",
-    character: "Interviewee:Neighbor",
+  complexhallways: {
+    title: "Location: complexhallways",
+    character: "",
     text: "well what I remember...",
     choices: [
       {
@@ -165,19 +165,19 @@ updateScene(currentScene);
 // --------------------------------------------------
 
 // Create a variable for health
-let health = 100;
+let will = 100;
 
 // Display current health
-const healthDisplay = document.getElementById("health-display");
+const willDisplay = document.getElementById("will-display");
 
 // Create a function to update health 
-function updateHealth(amount) {
-  health += amount;
-  healthDisplay.textContent = health;
+function updateWill(amount) {
+  will += amount;
+  willDisplay.textContent = will;
 }
 
 // This refreshes the health display
-updateHealth(0);
+updateWill(0);
 
 // --------------------------------------------------
 // INVENTORY
