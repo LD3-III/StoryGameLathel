@@ -1,39 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Survey</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Don't Tell Creev - Game</title>
+    <script src="script.js" defer></script>
 </head>
-<body>
 
-<h1>AI Mystery game</h1>
-<br></br>
-<h3><b>Prolouge</b></h3>
+<body style="background-color:#202030; color:white;">
 
-<p>You’ve been a detective for 6 years and in that time you’ve learned to never take a case
-personally. 
-This time was different.
-Three weeks ago, people began disappearing — quietly, one at a time, always after long nights
-spent talking to Creev AI, the companion app that's on every phone in the city. Their families
-report the same thing: they stopped sleeping, stopped eating, stopped answering the door. Then
-they were just gone.
-Your mother has been using Creev AI too, ever since the accident that took your father.</p>
-<br></br>
-<h3>Location 1 - Your apartment</h3>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Play the Game</a></li>
+                <li><a href="aboutme.html">About the Creator</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p><b>Day 1:</b>The case starts at home</p>
+    <main>
+        <header>
+            <h1 id="scene-title"></h1>
+            <h2 id="character-name"></h2>
+            <h3 id="scene-blurb"></h3>
+        </header>
 
-<p>A piercing green light glows under your mother's door. Creev AI is running again, long
-after midnight. Your phone buzzes with the first case files.</p>
+        <section>
+            <p id="scene-text"></p>
 
-<form action="/choose which" method="post">
+            <img id="scene-image"
+                 src=""
+                 alt="Story scene"
+                 width="400"
+                 hidden>
+        </section>
 
-  <label for="choose">What do you do?</label>
-  <select id="choose" name="choose">
-    <option value="mother">Check on your mother</option>
-    <option value="files">Check the case files</option>
-  </select>
+        <section>
+            <h3>What do you do?</h3>
+            <div id="choices-container"></div>
+        </section>
+
+        <section>
+            <h3>Detective Status</h3>
+
+            <p>Current Will:
+                <span id="will-display">100</span>
+            </p>
+
+            <p>Evidence:
+                <span id="evidence-display">0</span>
+            </p>
+
+            <p>Inventory:</p>
+            <ul>
+                <li id="inventory-display">Empty</li>
+            </ul>
+
+            <p id="message-display"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Don't Tell Creev</p>
+    </footer>
 
 </body>
 </html>
