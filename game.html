@@ -1,60 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
+    <title>Don't Tell Creev - Game</title>
+    <script src="script.js" defer></script>
 </head>
-<body>
+
+<body style="background-color:#202030; color:white;">
+
     <header>
-      <nav>
-            <ul> 
+        <nav>
+            <ul>
                 <li><a href="home.html">Home</a></li>
-            </ul>
-            <ul> 
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-            <ul> 
-                <li><a href="aboutme.html">About the creator</a></li>
+                <li><a href="game.html">Play the Game</a></li>
+                <li><a href="aboutme.html">About the Creator</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-    <header>
-        <h1 id="scene-title">  </h1>
-        <h2 id="character-name">  </h2>
-    </header>
-    
-    <section>
-    <p id="scene-text">     </p>
+        <header>
+            <h1 id="scene-title"></h1>
+            <h2 id="character-name"></h2>
+            <h3 id="scene-blurb"></h3>
+        </header>
 
-    </section>
+        <section>
+            <p id="scene-text"></p>
 
-    <section>
-        <div id="choices-container"> </div>
-    </section>   
-        
-    <section>
-        <p> Current Will:</p>
-        <ul>
-            <li id="will-display"> 100</li>
-        </ul>
+            <img id="scene-image"
+                 src=""
+                 alt="Story scene"
+                 width="400"
+                 hidden>
+        </section>
 
-        <p> Inventory:</p>
-        <ul>
-            <li id="inventory-display"> </li>
-        </ul>
+        <section>
+            <h3>What do you do?</h3>
+            <div id="choices-container"></div>
+        </section>
 
-        <p id="message-display"></p>
-    </section>
+        <section>
+            <h3>Detective Status</h3>
 
+            <p>Current Will:
+                <span id="will-display">100</span>
+            </p>
 
+            <p>Evidence:
+                <span id="evidence-display">0</span>
+            </p>
+
+            <p>Inventory:</p>
+            <ul>
+                <li id="inventory-display">Empty</li>
+            </ul>
+
+            <p id="message-display"></p>
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <p>Don't Tell Creev</p>
     </footer>
+
 </body>
 </html>
