@@ -1,6 +1,12 @@
 body {
-    background-color: #44614c;
+    background-color: #253b30;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    line-height: 1.6;
 }
-button {
-    
+
+section {
+    border: 1px solid #91a99a;
+    border-radius: 8px;
 }
