@@ -1,3 +1,4 @@
+/* External CSS: styles in a separate CSS file */
 body {
     background-color: #253b30;
     font-family: Arial, sans-serif;
@@ -9,4 +10,28 @@ body {
 section {
     border: 1px solid #91a99a;
     border-radius: 8px;
+}
+
+/* Class selector: shared heading on all three pages */
+.heading {
+    font-size: 32px;
+    color: #f2cf76;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Class selector: a card can be used more than once */
+.card {
+    padding: 15px;
+    border: 2px solid #91a99a;
+    background-color: #344c40;
+    text-align: center;
+}
+
+/* ID selector: styles only the Will stat */
+#will-display {
+    color: #f2cf76;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 4px;
 }
