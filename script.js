@@ -1,20 +1,3 @@
-
-// --------------------------------------------------
-// SCENES
-// Read through the comments below to see what this section does
-//
-// TO CUSTOMIZE THIS SECTION
-// 1) add fields for each scene, as relevant, to match your mockup
-// 2) customize the scenes to fit your story
-// 3) add any new fields to the function below
-// --------------------------------------------------
-
-// First, we create a variable for the current scene being displayed
-
-// ------------------------------------------
-// GAME VARIABLES
-// ------------------------------------------
-
 let currentScene = "prologue";
 
 let will = 100;
