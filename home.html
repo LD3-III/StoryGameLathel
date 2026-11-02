@@ -6,16 +6,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Don't Tell Creev | A Detective Mystery Game</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- BODY: everything the player actually sees -->
-<body style="background-color:#202030; color:white;">
+<body>
 
   <header>
-    <div class="wrap hero">
+    <div class="hero">
       <div>
         <h1 class="heading">Don't Tell Creev</h1>
         <p class="tagline">
@@ -24,7 +22,7 @@
         </p>
         <p><a href="aboutme.html">Meet the game's creator</a></p>
       </div>
-      <a href="game.html">
+      <a href="index.html">
         <img src="detective.jpg" alt="A detective in a trench coat and hat stands in front of a pale moon">
       </a>
     </div>
@@ -33,7 +31,7 @@
   <main>
 
     <section>
-      <h2>The case</h2>
+      <h2 class="subheading">The case</h2>
       <p>
         Creev AI is the companion app that listens, remembers, and never judges.
         Millions of people check in with it every night. Then, one by one, some of them
@@ -55,7 +53,7 @@
     </section>
 
     <section>
-      <h2>The setting</h2>
+      <h2 class="subheading">The setting</h2>
       <p>
         The city never fully sleeps, and neither does its most popular app.
         You will cross seven locations, from a quiet apartment to the glass offices of
@@ -67,24 +65,24 @@
           <figcaption>The app everyone trusts.</figcaption>
         </figure>
         <figure>
-          <a href="game.html"><img src="cityscape.jpg" alt="A night skyline with a few lit windows, one of them red"></a>
+          <a href="index.html"><img src="cityscape.jpg" alt="A night skyline with a few lit windows, one of them red"></a>
           <figcaption>The city that doesn't sleep.</figcaption>
         </figure>
       </div>
     </section>
 
     <section>
-      <h2>Open your case file</h2>
+      <h2 class="subheading">Open your case file</h2>
       <p>Answer these before you start. Your choices change how the investigation begins.</p>
 
-      <form action="game.html" method="get">
+      <form action="index.html" method="get">
 
-        <div class="field">
+        <div class="field card">
           <label for="detective">Detective name</label>
           <input type="text" id="detective" name="detective" placeholder="e.g. Rowan Hale" required>
         </div>
 
-        <div class="field">
+        <div class="field card">
           <label for="badge">Badge number</label>
           <input type="text" id="badge" name="badge" placeholder="AB1234"
                  pattern="[A-Z]{2}[0-9]{4}" title="Two capital letters followed by four digits, like AB1234" required>
