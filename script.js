@@ -20,7 +20,7 @@ const scenes = {
         character: "Detective Grey",
         blurb: "A strange disappearance case.",
         text: "You've been a detective for 6 years and you've learned to never take a case personally. This time was different. Three weeks ago, people began disappearing after using Creev AI, a companion app found on every phone in the city. Your mother has been using it too, ever since the accident that took your father.",
-        image: "",
+        image:"",
         choices: [
             {
                 text: "Begin the investigation",
