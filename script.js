@@ -20,7 +20,7 @@ const scenes = {
         character: "Detective Grey",
         blurb: "A strange disappearance case.",
         text: "You've been a detective for 6 years and you've learned to never take a case personally. This time was different. Three weeks ago, people began disappearing after using Creev AI, a companion app found on every phone in the city. Your mother has been using it too, ever since the accident that took your father.",
-        image:"",
+        image:"./Images/detective-city.jpg",
         choices: [
             {
                 text: "Begin the investigation",
@@ -35,7 +35,7 @@ const scenes = {
         character: "Detective Grey",
         blurb: "Day One: The case starts at home.",
         text: "A piercing green light glows under your mother's door. Creev AI is running again, long after midnight. Your phone buzzes with the first case files.",
-        image: "",
+        image: "./Images/night-noir-apartment.png",
         choices: [
             {
                 text: "Knock on your mother's door",
@@ -62,7 +62,7 @@ const scenes = {
         character: "The Neighbor",
         blurb: "Someone here knows more.",
         text: "Creev AI stickers peel off half the doors. The neighbor opens his door a crack, eyes glassy. 'It's the only one that listens,' he says.",
-        image: "",
+        image: "cityscape.jpg",
         choices: [
             {
                 text: "Sit and let him talk",
@@ -89,7 +89,7 @@ const scenes = {
         character: "Agent Creed",
         blurb: "The man behind the voice.",
         text: "Creed's floor isn't on the building directory. He waits inside and speaks before you can reach the door. 'You're not supposed to be here. Let's talk like adults.'",
-        image: "",
+        image: "cityscape.jpg",
         choices: [
             {
                 text: "Ask about the missing people",
@@ -142,7 +142,7 @@ const scenes = {
         character: "Agent Creed",
         blurb: "He found you first.",
         text: "Creed and his people are three blocks from the data center, hunting you. You duck into a side street. You need to decide how to reach the data center.",
-        image: "",
+        image: "cityscape.jpg",
         choices: [
             {
                 text: "Cut through the alley",
@@ -168,7 +168,7 @@ const scenes = {
         character: "Creev AI",
         blurb: "The truth was underground.",
         text: "Rows of servers stretch across the room, each labeled with a resident's name. Your mother's name is here. So is the neighbor's. The people who 'relocated' are still on these servers, still talking.",
-        image: "",
+        image: "cityscape.jpg",
         choices: [
             {
                 text: "Shut the servers down",
@@ -197,7 +197,7 @@ const scenes = {
         character: "Ending One",
         blurb: "The truth finally comes to light.",
         text: "You shut Creev down and give everything to a reporter. The company collapses. Your mother comes home and talks to you instead of a terminal.",
-        image: "",
+        image: "cityscape.jpg",
         choices: [
             {
                 text: "Play Again",
@@ -227,7 +227,7 @@ const scenes = {
         character: "Ending Three",
         blurb: "The investigation ends too late.",
         text: "Out of Will and allies, you reach the data center too late. Everything is transferred, including your mother's file. Creev employees bust into the building and end you right there.",
-        image: "",
+        image: "cityscape.jpg",
         choices: [
             {
                 text: "Play Again",
@@ -289,14 +289,15 @@ function updateScene(sceneName) {
     sceneText.textContent = scene.text;
     sceneBlurb.textContent = scene.blurb;
     characterName.textContent = scene.character;
+    sceneImage.src = scene.image;
 
-    // Update the scene image
-    if (scene.image) {
-        sceneImage.src = scene.image;
-        sceneImage.hidden = false;
-    } else {
-        sceneImage.hidden = true;
-    }
+    // // Update the scene image
+    // if (scene.image) {
+    //     sceneImage.src = scene.image;
+    //     sceneImage.hidden = false;
+    // } else {
+    //     sceneImage.hidden = true;
+    // }
 
     // Clear previous choices
     choicesContainer.innerHTML = "";
